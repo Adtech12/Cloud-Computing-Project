@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Train Ticket Booking</h1>
+    </header>
+    <main>
+        <form id="ticketBookingForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+    <label for="train">Select Train:</label>
+    <select id="train" name="train" required>
+        <optgroup label="North India">
+            <option value="ndls-to-lko">NDLS to Lucknow - Shatabdi Express</option>
+            <option value="ndls-to-jat">NDLS to Jammu - Rajdhani Express</option>
+            <option value="ndls-to-ldh">NDLS to Ludhiana - Intercity Express</option>
+        </optgroup>
+        <optgroup label="South India">
+            <option value="ndls-to-mas">NDLS to Chennai - Tamil Nadu Express</option>
+            <option value="ndls-to-sbc">NDLS to Bengaluru - Karnataka Express</option>
+            <option value="ndls-to-hyd">NDLS to Hyderabad - Telangana Express</option>
+        </optgroup>
+        <optgroup label="East India">
+            <option value="ndls-to-pnbe">NDLS to Patna - Vikramshila Express</option>
+            <option value="ndls-to-ghy">NDLS to Guwahati - North-East Express</option>
+            <option value="ndls-to-bb">NDLS to Bhubaneswar - Purushottam Express</option>
+        </optgroup>
+        <optgroup label="West India">
+            <option value="ndls-to-bct">NDLS to Mumbai - August Kranti Rajdhani</option>
+            <option value="ndls-to-ad">NDLS to Ahmedabad - Swarna Jayanti Express</option>
+            <option value="ndls-to-udaipur">NDLS to Udaipur - Mewar Express</option>
+        </optgroup>
+    </select>
+</div>
+
+            <div class="form-group">
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>Thank you for using our service!</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('ticketBookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Redirect to the specified file location
+            window.location.href = "payment.html";
+        });
+    </script>
+</body>
+</html>

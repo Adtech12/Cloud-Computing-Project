@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url('https://swarajya.gumlet.io/swarajya/2024-08-09/0z0dopst/Thiruvananthapuram_Kasaragod_Van.jpg?w=610&q=50&compress=true&format=auto');
+    background-size: cover;  /* Ensures the image covers the whole page */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    font-family: Arial, sans-serif;
+
+}
+
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Confirmation Page Styles */
+.confirmation {
+    text-align: center;
+    padding: 2rem;
+    background: #e8f5e9;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #4caf50;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    appearance: none; /* Hides the default dropdown arrow */
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+option {
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+/* Set full height for body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Your main content style */
+main {
+    min-height: calc(100vh - 100px); /* Adjust the height to ensure space for the footer */
+    padding-bottom: 50px; /* Padding to prevent content from being hidden under the footer */
+}
+
+/* Footer style */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+

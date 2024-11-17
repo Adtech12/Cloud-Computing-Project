@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Gateway</h1>
+    </header>
+    <main>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="month" id="expiryDate" name="expiryDate" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+            </div>
+            <button type="submit">Pay Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>Secure Payment Gateway</p>
+    </footer>
+    <script>
+    // Add event listener to the payment form
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        // Redirect to the confirmation page
+        window.location.href = "confirmation.html";
+    });
+
+    // Retrieve ticket details from localStorage
+    const ticketDetails = JSON.parse(localStorage.getItem('ticketDetails'));
+
+    if (ticketDetails) {
+        // Display ticket details in the console (optional)
+        console.log(`Name: ${ticketDetails.name}`);
+        console.log(`Email: ${ticketDetails.email}`);
+        console.log(`From: ${ticketDetails.fromStation}`);
+        console.log(`To: ${ticketDetails.toStation}`);
+        console.log(`Date: ${ticketDetails.date}`);
+        console.log(`Class: ${ticketDetails.travelClass}`);
+        console.log(`Seats: ${ticketDetails.seats}`);
+    }
+</script>
+
+</body>
+</html>
